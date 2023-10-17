@@ -20,10 +20,10 @@ class Book:
         self.total_copies = total_copies
 
 class Transaction:
-    def __init__(self, transaction_id, user, book, due_date):
+    def __init__(self, transaction_id, user_id, book_id, due_date):
         self.transaction_id = transaction_id
-        self.user = user
-        self.book = book
+        self.user = user_id
+        self.book = book_id
         self.checkout_date = None
         self.due_date = due_date
         self.return_date = None
@@ -49,13 +49,15 @@ class ConsoleUI:
 
     def run(self):
         # Implement console-based UI to interact with the library system and users
-        pass
+        print("Wellcome To Console Based Library Management Sysytem")
+        print("1. Librarian\n 2. Student or Teacher")
 
 
 
 
 
-    
+
+
 # Example Usage:
 
 # Create a library instance
