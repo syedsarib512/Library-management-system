@@ -1,3 +1,4 @@
+
 import os
 import openpyxl
 from openpyxl import load_workbook
@@ -174,6 +175,7 @@ class ConsoleUI:
         self.library = library
         self.user = user
     def run(self):
+        # Implement console-based UI to interact with the library system and users
         print("Wellcome To Console Based Library Management Sysytem")
         print("1. Librarian\n 2. Student or Teacher")
         start = input("Enter your Choice here : ")
@@ -192,6 +194,7 @@ class ConsoleUI:
         else:
             print("Invalid Input. Try Again!")
             self.run()
+# Add the detail of Admin
 librarian = Librarian("1", "admin", "admin123")
 user1 = User("2", "user1", "user123")
 
@@ -293,6 +296,3 @@ for i, book_info in enumerate(famous_books, start=1):
 # Initialize the console-based UI and run the system
 ui = ConsoleUI(librarian,user1)
 ui.run()
-
-
-
